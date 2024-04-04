@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    div{
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .question{
+      color:green;
+    }
+    .answer{
+      color: black
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+<ol>
+  <li class="question">
+    function logUpTo(n) {<br>
+      for (let i = 1; i <= n; i++) {<br>
+        console.log(i);<br>
+      }<br>
+    }
+    <div class="answer">
+      Time Complexity: O(n) <br>
+      The time complexity of the given function logUpTo(n) can be calculated as follows: <br>
+
+In this function, we iterate from 1 to n and print each number. Therefore, the time complexity of the function is O(n), as it grows linearly with the input value n.<br>
+
+So, the time complexity of this function is linear, increasing linearly with the input value n.
+    </div>
+  </li>
+  <li class="question">
+    function logAtLeast10(n) {<br>
+      for (let i = 1; i <= Math.max(n, 10); i++) {<br>
+        console.log(i);<br>
+      }<br>
+    }
+    <div class="answer">Time Complexity: O(n)</div>
+  </li>
+
+</li>
+<li class="question">
+  function logAtMost10(n) {<br>
+    for (let i = 1; i <= Math.min(n, 10); i++) {<br>
+      console.log(i);<br>
+    }<br>
+  }
+  <div class="answer">
+    Time Complexity: O(1)
+  </div>
+</li>
+
+<li class="question">
+  function onlyElementsAtEvenIndex(array) {<br>
+    let newArray = [];<br>
+    for (let i = 0; i < array.length; i++) {<br>
+      if (i % 2 === 0) {<br>
+        newArray.push(array[i]);<br>
+      }<br>
+    }<br>
+    return newArray; <br>
+  }<br>
+  <div class="answer">
+    Time Complexity: O(n) <br>
+    The for loop iterates over the array elements once, examining each element. Within the loop, the operations performed (such as checking if the index is even and pushing elements into the newArray) are constant time operations, meaning their execution time does not depend on the size of the input array.
+    Since the loop iterates through each element of the array exactly once, the time complexity of the code is O(n), where n is the size of the input array.
+    Therefore, the time complexity of the onlyElementsAtEvenIndex function is 
+    O(n).
+  </div>
+</li>
+
+<li class="question">
+  function vowelCount(str) {
+    let vowelCount = {};
+    const vowels = "aeiouAEIOU";
+  
+    for (let char of str) {
+      if(vowels.includes(char)) {
+        if(char in vowelCount) {
+          vowelCount[char] += 1;
+        } else {
+          vowelCount[char] = 1;
+        }
+      }
+    }
+  
+    return vowelCount;
+  }
+
+  <div class="answer">
+    Time Complexity: O(n)
+  </div>
+</li>
+
+
+
+
+
+
+
+
+</ol>
+<script src="app.js"></script>
+</body>
+</html>

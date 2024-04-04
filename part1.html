@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .question{
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(116, 10, 10)
+    }
+    .answer{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight:700;
+      color: green
+    }
+    li{
+      margin-top: 15px;
+
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+<ol>
+  <li> <div class="question">
+   Q: O(n + 10)
+  </div><div class="answer">
+   A: O(n)
+  </div> <div class="description">
+    Description:
+    In the expression O(n + 10), the constant term (10) becomes insignificant as the input size (n) grows large. Therefore, it simplifies to O(n), indicating linear time complexity.
+  </div>
+</li>
+  <li> <div class="question">
+    O(100 * n)
+  </div><div class="answer">
+    O(n)
+  </div> <div class="description">
+    Description: In the expression O(100 * n), the constant factor (100) becomes insignificant as the input size (n) grows large. Therefore, it simplifies to O(n), indicating linear time complexity.
+  </div>
+
+</li>
+  <li> <div class="question">
+  Q: O(25)
+  </div><div class="answer">
+  A: O(1)
+  </div> <div class="description">
+  Description:  In this case, it's constant time complexity, commonly denoted as O(1). It indicates that regardless of the input size, the algorithm's runtime remains constant.
+  </div>
+
+</li>
+  <li> <div class="question">
+  Q:  O(n^2 + n^3)
+  </div><div class="answer">
+  A:  O(n^3)
+  </div> <div class="description">
+  Description: Since n^3 grows faster than n^2 as the input size increases, it becomes the dominant term. Therefore, it is expressed as O(n^3).  
+  </div>
+
+</li>
+  <li> <div class="question">
+  Q:  O(n + n + n + n)
+  </div><div class="answer">
+  A: O(n)
+  </div> <div class="description">
+  Description: O(n + n + n + n) simplifies to O(4n). However, constants are disregarded in Big O notation, so it further simplifies to O(n). Therefore, the value is O(n).
+  </div>
+
+</li>
+  <li> <div class="question">
+  Q:  O(1000 * log(n) + n)
+  </div><div class="answer">
+  A: O(n)
+  </div> <div class="description">
+  Description: "1000 * log(n)" may seem large due to the constant factor, it is outweighed by the linear term "n" as "n" dominates the growth rate, especially for large values of "n".
+
+  Therefore, we simplify the expression to O(n), indicating that the time complexity of the algorithm is primarily determined by its linear operations as the input size increases. 
+  </div>
+
+</li>
+  <li> <div class="question">
+    Q: O(1000 * n * log(n) + n)
+  </div><div class="answer">
+    A:   O(n*log(n))
+  </div> <div class="description">
+    Description:we focus on the dominant term "1000 * n * log(n)" and remove constants, simplifying it to O(n * log(n)).
+  </div>
+
+</li>
+  <li> <div class="question">
+  Q:  O(2^n + n^2)
+  </div><div class="answer">
+  A:  O(2^n)
+  </div> <div class="description">
+  Description:  In this expression, "2^n" grows much faster than "n^2" as the input size increases. This is because exponential growth (2^n) accelerates significantly faster than quadratic growth (n^2).
+
+Therefore, as the input size becomes sufficiently large, the term "2^n" will dominate the overall time complexity. Hence, the expression can be simplified to O(2^n) to represent its worst-case time complexity.
+
+
+
+
+  </div>
+
+</li>
+  <li> <div class="question">
+    O(5 + 3 + 1)
+  </div><div class="answer">
+    A: O(1)
+  </div> <div class="description">
+    O(5 + 3 + 1) simplifies to O(9). However, in Big O notation, constants are ignored. Therefore, the final simplified expression is O(1).
+  </div>
+
+</li>
+  <li> <div class="question">
+    O(n + n^(1/2) + n^2 + n * log(n)^10)
+  </div><div class="answer">
+    O(n * log(n)^10)
+  </div> <div class="description">
+    the term with the highest growth rate is n * log(n)^10
+  </div>
+
+</li>
+
+</ol>
+
+
+
+
+
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
